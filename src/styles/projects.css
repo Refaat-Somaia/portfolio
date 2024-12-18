@@ -1,0 +1,14 @@
+.conatiner-projects{
+    position: relative;
+    top: 3rem;
+    width: 100%;
+    text-align: center;
+}
+.conatiner-projects h1{
+    margin-bottom: 3rem;
+}
+@media (max-width :979px) {
+    .conatiner-projects{
+    }
+    
+}

@@ -1,0 +1,115 @@
+body {
+  overflow-x: hidden;
+}
+.container-skills {
+  margin-top: -1rem;
+  position: relative;
+  text-align: center;
+  padding: 3rem 0;
+}
+#name {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 1.2rem;
+  margin-left: 1.2rem;
+  font-size: 1.6rem;
+  color: #0f677f;
+
+  font-weight: 600;
+  z-index: 11;
+}
+
+.skills-bar {
+  position: relative;
+  top: -3rem;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+.container-skills h1 {
+  position: relative;
+  top: 3rem;
+  margin-bottom: 8rem;
+}
+.blob-right {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+  width: 12rem;
+  animation: fade-in 1s;
+}
+.blob-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+
+  width: 13rem;
+}
+@keyframes slide-in-blob-left {
+  from {
+    opacity: 1;
+    transform: translateX(-30vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slide-in-blob-right {
+  from {
+    opacity: 1;
+    transform: translateX(30vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes skill-in {
+  from {
+    opacity: 0;
+    transform: translateX(-7rem);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 1080px) {
+  .blob-left {
+    width: 9rem;
+  }
+  .blob-right {
+    width: 9rem;
+  }
+}
+@media (max-width: 680px) {
+  .skills-bar {
+    width: 95%;
+  }
+}
+@media (max-width: 548px) {
+  .blob-left {
+    width: 8rem;
+  }
+
+  .blob-right {
+    width: 7rem;
+  }
+}

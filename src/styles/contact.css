@@ -1,0 +1,145 @@
+.contact-container {
+  width: 100%;
+  position: relative;
+  height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(241, 241, 241);
+
+  margin-top: 10rem;
+}
+.img-container {
+  width: 40%;
+  opacity: 0;
+}
+@keyframes img-slide-big {
+  from {
+    transform: translateX(50%);
+  }
+  70% {
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes img-slide-small {
+  to {
+    opacity: 1;
+  }
+}
+.img-container img {
+  width: 100%;
+}
+.img-container h2 {
+  margin: 0;
+  font-size: 2rem;
+  margin-bottom: -2rem;
+  text-align: center;
+}
+.contact-list {
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-list .square {
+  width: 15rem;
+  margin: 0.8rem;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 2px inset;
+  border-radius: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  opacity: 0;
+}
+@keyframes fade-in-square {
+  from {
+    transform: translateY(5rem);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#resume-btn {
+  position: relative;
+  top: 1rem;
+  cursor: pointer;
+  margin: 0 30%;
+  opacity: 0;
+  border: none;
+  padding: 1.1rem 2.5rem;
+  font-size: 1.3rem;
+  background-color: #19a7ce;
+  color: white;
+  border-radius: 12px;
+  transition: 0.5s;
+}
+#resume-btn {
+  color: white;
+  text-decoration: none;
+}
+#resume-btn:hover {
+  box-shadow: #9ad6e6 0px 8px 24px;
+}
+
+.contact-list .square:hover .icon {
+  width: 4rem;
+  opacity: 1;
+  font-size: 3.5rem;
+}
+.square .icon {
+  font-size: 2.5rem;
+  width: 2.5rem;
+  opacity: 0.8;
+  transition: 0.3s;
+  color: #868686;
+  margin-bottom: 0.5rem;
+}
+.square {
+  text-decoration: none;
+  color: #535353;
+  font-weight: 600;
+  position: relative;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  transition: text-decoration-color;
+}
+@media (max-width: 1380px) {
+  .contact-container {
+    height: fit-content;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+  .contact-container .contact-list {
+    width: 70%;
+  }
+}
+@media (max-width: 1080px) {
+  .img-container h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .img-container,
+  .contact-list {
+    width: 100%;
+    text-align: center;
+  }
+  #resume-btn {
+    margin: 0 3rem;
+  }
+  .contact-container img {
+    width: 60%;
+  }
+}
