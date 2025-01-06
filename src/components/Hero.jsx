@@ -29,10 +29,10 @@ function Hero() {
                     child.classList.add("highlight")
 
                 }
-                const delay = i + 2 < 10 ? `${1}.${i + 2}s` : `${2}.${i % 10 + 3}s`;
+                const delay = i + 2 < 10 ? `${0}.${i + 2}s` : `${1}.${i % 10 + 3}s`;
                 child.style.animation = `span-in 0.5s forwards ${delay}`;
             });
-        }, 100);
+        }, 0);
 
     }, [])
 

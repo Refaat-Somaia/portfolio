@@ -48,7 +48,7 @@ function NavBar() {
 
           Contact me<div className='underLine' /></Link>
         <div style={{ width: scrollProgress + "%" }} className="scroll-progress" />
-
+        <h3>Refaat Somaia</h3>
       </div>
 
       <div className="bottomNav">

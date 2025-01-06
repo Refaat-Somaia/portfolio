@@ -82,7 +82,11 @@
   border: none;
   padding: 1.1rem 2.5rem;
   font-size: 1.3rem;
-  background-color: #19a7ce;
+  background: linear-gradient(
+    90deg,
+    rgb(64, 195, 218) 9%,
+    rgba(27, 134, 219, 1) 100%
+  );
   color: white;
   border-radius: 12px;
   transition: 0.5s;
@@ -110,7 +114,8 @@
 }
 .square {
   text-decoration: none;
-  color: #535353;
+  color: #324c6d;
+
   font-weight: 600;
   position: relative;
   text-decoration: underline 0.15em rgba(0, 0, 0, 0);

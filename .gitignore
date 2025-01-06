@@ -12,6 +12,9 @@
 # production
 /build
 /src/assets/
+/.firebase
+/firebase.json
+/.firebserc
 
 
 # misc

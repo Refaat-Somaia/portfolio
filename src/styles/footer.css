@@ -3,7 +3,11 @@ footer {
   /* bottom: 0 !important; */
   display: flex;
   padding: 2rem;
-  background-color: #19a7ce;
+  background: linear-gradient(
+    90deg,
+    rgb(64, 195, 218) 9%,
+    rgba(27, 134, 219, 1) 100%
+  );
 }
 
 footer h2 {

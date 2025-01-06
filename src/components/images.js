@@ -28,7 +28,6 @@ import sparkleShip16 from "../assets/images/sparkleShip/1 (16).jpg";
 import sparkleShip17 from "../assets/images/sparkleShip/1 (17).jpg";
 import sparkleShip18 from "../assets/images/sparkleShip/1 (18).jpg";
 import sparkleShip19 from "../assets/images/sparkleShip/1 (19).jpg";
-import sparkleShip20 from "../assets/images/sparkleShip/1 (20).jpg";
 import sparkleShip21 from "../assets/images/sparkleShip/1 (21).jpg";
 import sparkleShip22 from "../assets/images/sparkleShip/1 (22).jpg";
 import sparkleShip23 from "../assets/images/sparkleShip/1 (23).jpg";
@@ -81,7 +80,31 @@ import budgetFlutter15 from "../assets/images/budget flutter/1 (15).jpg";
 import budgetFlutter16 from "../assets/images/budget flutter/1 (16).jpg";
 import budgetFlutter17 from "../assets/images/budget flutter/1 (17).jpg";
 import budgetFlutter18 from "../assets/images/budget flutter/1 (18).jpg";
+import funlish1 from "../assets/images/funlish/1 (1).png";
+import funlish2 from "../assets/images/funlish/1 (2).png";
+import funlish3 from "../assets/images/funlish/1 (3).png";
+import funlish4 from "../assets/images/funlish/1 (4).png";
+import funlish5 from "../assets/images/funlish/1 (5).png";
+import funlish6 from "../assets/images/funlish/1 (6).png";
+import funlish7 from "../assets/images/funlish/1 (7).png";
+import funlish8 from "../assets/images/funlish/1 (8).png";
+import funlish9 from "../assets/images/funlish/1 (9).png";
+import funlish10 from "../assets/images/funlish/1 (10).png";
+import funlish11 from "../assets/images/funlish/1 (11).png";
 
+const funlishImages = [
+  funlish1,
+  funlish2,
+  funlish3,
+  funlish4,
+  funlish5,
+  funlish6,
+  funlish7,
+  funlish8,
+  funlish9,
+  funlish10,
+  funlish11,
+];
 const budgetFlutterImages = [
   budgetFlutter1,
   budgetFlutter18,
@@ -148,7 +171,6 @@ const sparkleShipImages = [
   sparkleShip17,
   sparkleShip18,
   sparkleShip19,
-  sparkleShip20,
   sparkleShip21,
   sparkleShip22,
   sparkleShip23,
@@ -191,6 +213,7 @@ export default {
   carHuntImages,
   budgetReactImages,
   budgetFlutterImages,
+  funlishImages,
 };
 
 // <div id="blurBg"

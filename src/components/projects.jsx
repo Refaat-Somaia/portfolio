@@ -17,6 +17,7 @@ import sparkleShipVid from "../assets/SparkleShip demo.mp4"
 import learnGateVid from "../assets/LearnGate demo.mp4"
 import soundlyVid from "../assets/Soundly demo.mp4"
 import budgetReactVid from "../assets/BudgetReact demo.mp4"
+import funlsihVid from "../assets/Funlish demo.mp4"
 import budgetFlutterVid from "../assets/BudgetFlutter demo.mp4"
 import react from "../assets/images/react.png"
 import socketIo from "../assets/images/Socket-io.png"
@@ -24,7 +25,7 @@ import images from "./images";
 
 
 function Projects() {
-  const { soundlyImages, sparkleShipImages, learnGateImages, carHuntImages, budgetReactImages, budgetFlutterImages } = images;
+  const { soundlyImages, sparkleShipImages, learnGateImages, carHuntImages, budgetReactImages, budgetFlutterImages, funlishImages } = images;
 
   return (
     <>
@@ -44,7 +45,7 @@ function Projects() {
         allows the user to search for scholarships using a search bar as well as
         the ability to use many filters, also the app offers chatting in groups service
         that allows the student to interact with and text other srudents of similar
-        academic backgrounds." vid={sparkleShipVid} tech1={flutter} device={'phone'}
+        academic backgrounds." codeLink="https://github.com/Refaat-Somaia/sparkleShip" vid={sparkleShipVid} tech1={flutter} device={'phone'}
           tech2={nodeJs} tech3={socketIo} icon1Title="Flutter Mobile App" />
 
         <Project vid={budgetFlutterVid} images={budgetFlutterImages} title={"Flutter Budget App"} color={"#6AD0C1"} icon={faMobileScreenButton}
@@ -67,6 +68,14 @@ The app offers many features such as shuffle play which plays tracks in random o
 recently played tracks and more. 
 The app also allows users the choice between multiple colored themes as well as the choice between a light and a dark modes."
           icon1Title="Flutter Mobile App" codeLink="https://github.com/Refaat-Somaia/Soundly---Music-Player" device={'phone'}
+        />
+
+        <Project vid={funlsihVid} images={funlishImages} title="Online English Platform Landing Page" color={"#6C63FF"} device={'laptop'}
+          description="A landing page for an online Engish platform, the page is multilingual (Arabic - English) and
+          offers a price calulator. Information about the team members of the platform is presented using a slider that auto scrolls with a timer."
+          tech1={react}
+          tech3={css} codeLink="" tech2={firebase} icon1={faLaptop} icon1Title={"Web App - Responsive"}
+
         />
 
         <Project img={learGate} images={learnGateImages} title="Student Portal Website" color={"#3F72AF"} device={'laptop'}

@@ -6,11 +6,12 @@ import 'react-device-frameset/styles/marvel-devices.min.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareXmark, faGlobe, faLaptop } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faAndroid } from '@fortawesome/free-brands-svg-icons'
-
+import Slider from "./Slider"
 const Project = (props) => {
 
   const [anim, setAnime] = useState();
   const projectRef = useRef(null);
+  const [auto, setAuto] = useState(false)
 
   useEffect(() => {
     let e = document.getElementsByClassName("skills-bar")[0].children
@@ -64,11 +65,12 @@ const Project = (props) => {
 
       </div>
       <div className="col">
+
+
         <div className={props.device}>
-          <ImageSlider
-            fit={props.device == "phone" ? "cover" : "contain"}
-            height={props.device == "phone" ? "30rem" : "20rem"} video={props.vid} images={props.images}>
-          </ImageSlider>
+          <Slider color={props.color} vid={props.vid} className={props.device == "laptop" ? "slider-laptop" : "slider-mobile"}>
+            {props.images}
+          </Slider>
           <div className='camera' />
           {props.device != "laptop" ? <div className='phoneBtns1' /> : <div />}
           {props.device != "laptop" ? <div className='phoneBtns2' /> : <div />}

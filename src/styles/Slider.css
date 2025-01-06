@@ -1,0 +1,168 @@
+:root {
+  --grad: -webkit-linear-gradient(#4a85fc, #9e75ff);
+}
+.container-slider {
+  height: inherit;
+  position: relative;
+}
+.container-slider:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.slider-mobile,
+.slider-laptop {
+  overflow: hidden;
+  position: relative;
+  width: 95%; /* Adjust width as needed */
+  height: 98%;
+  margin: auto;
+  border-radius: 24px;
+  background-color: transparent;
+}
+.slider-laptop video {
+  width: 85%;
+  left: 9%;
+  position: relative;
+  margin: auto;
+}
+@media (max-width: 600px) {
+  .slider-laptop video {
+    width: 95%;
+    left: 2.5%;
+  }
+}
+
+.slider-laptop {
+  height: 100%;
+  top: 8%;
+  border-radius: 0;
+}
+.slider-laptop img {
+  width: 100%;
+}
+.slider-mobile img,
+video {
+  width: 100%;
+  height: 99%;
+}
+
+/* .circle-top-slider {
+    position: absolute;
+    width: 0.2rem;
+    height: 6rem;
+    transform: rotate(45deg);
+    top: -1rem;
+    left: 2rem;
+    opacity: 0.2;
+    background-color: #4a85fc;
+  } */
+.slider-track {
+  display: flex;
+  transition: transform 0.4s; /* Smooth animation */
+}
+
+.slider-item {
+  min-width: 100%; /* Each item takes the full width of the slider */
+}
+
+.controls,
+.lap-controls {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 140%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateX(-50%); /* Adjust for proper vertical alignment */
+  pointer-events: none; /* Prevent blocking swipe interactions */
+}
+.slider-laptop .controls {
+  top: 40%;
+}
+.lap-controls {
+  width: 110%;
+}
+.controls button,
+.lap-controls button {
+  padding: 0.5rem 0.5rem;
+  color: #4a85fc;
+  /* visibility: hidden; */
+  /* color: white; */
+  background-color: #f0f0f0;
+  border: none;
+
+  border-radius: 32px;
+  cursor: pointer;
+  transition: 0.3s;
+  pointer-events: all; /* Re-enable clicking on the buttons */
+}
+.controls button:hover,
+.lap-controls button:hover {
+  scale: 1.3;
+}
+.controls button:active,
+.lap-controls button:active {
+  scale: 0.9;
+}
+
+.controls .icon,
+.lap-controls .icon {
+  font-size: 1.6rem;
+}
+.controls button:disabled {
+  color: #cccccc;
+  cursor: not-allowed;
+}
+.dots {
+  display: none;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.dot {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.25s;
+}
+.dot:hover {
+  scale: 1.2;
+}
+.dot.active {
+  /* background-color: #9e75ff; */
+  width: 30px;
+  border-radius: 32px;
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4a85fc;
+  transform: scaleX(0); /* Start at 0 width */
+  transform-origin: left; /* Animate from left to right */
+  animation: progressAnimation linear infinite;
+  animation-duration: 10s; /* Match autoSlideInterval (5000ms) */
+}
+
+@keyframes progressAnimation {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@media (max-width: 1044px) {
+  .controls button {
+    padding: 0.25rem 0.5rem;
+  }
+}

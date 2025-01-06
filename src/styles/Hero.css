@@ -76,13 +76,18 @@ h2 span {
   width: 10rem;
   border: none;
   font-size: 1.2rem;
-  background-color: #19a7ce;
+  background: linear-gradient(
+    90deg,
+    rgb(64, 195, 218) 9%,
+    rgba(27, 134, 219, 1) 100%
+  );
+
   color: white;
   border-radius: 8px;
   height: 3rem;
   transition: 0.5s;
   opacity: 0;
-  animation: h1-in 1s forwards 3s;
+  animation: h1-in 1s forwards 1.5s;
 }
 .profile-text button {
   animation: none;
@@ -91,13 +96,20 @@ h2 span {
 
 .profile-text p {
   font-size: 1.3rem;
+  font-weight: 500;
 }
 .text button:hover,
 .profile-text button:hover {
   box-shadow: #9ad6e6 0px 8px 24px;
 }
 .highlight {
-  color: #19a7ce;
+  background: linear-gradient(
+    90deg,
+    rgb(64, 195, 218) 9%,
+    rgba(27, 134, 219, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
 .hero img {
@@ -154,7 +166,7 @@ h2 span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: wave-in 2s forwards 2s;
+  animation: wave-in 2s forwards 0.8s;
   opacity: 0;
 }
 .hero .img2 {
