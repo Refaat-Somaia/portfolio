@@ -1,12 +1,10 @@
 import '../styles/project.css'
 import { useState, useEffect, useRef } from 'react';
-import ImageSlider from "./imageSlider";
-import { DeviceFrameset } from 'react-device-frameset'
 import 'react-device-frameset/styles/marvel-devices.min.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquareXmark, faGlobe, faLaptop } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faAndroid } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import Slider from "./Slider"
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 const Project = (props) => {
 
   const [anim, setAnime] = useState();
@@ -58,8 +56,11 @@ const Project = (props) => {
           {props.tech2 != null ? <div> <img className='rowImg' src={props.tech2} alt="" /></div> : <div></div>}
           {props.tech3 != null ? <div> <img className='rowImg' src={props.tech3} alt="" /></div> : <div></div>}
           {props.tech4 != null ? <div> <img className='rowImg' src={props.tech4} alt="" /></div> : <div></div>}
+          {props.link != null ? <a target='blank' href={props.link}>
+            <FontAwesomeIcon style={{ color: props.color }} className='icon' icon={faGlobe} />
+          </a> : ""}
           <a target='blank' href={props.codeLink}>
-            <FontAwesomeIcon style={{ color: props.color }} className='icon' icon={faGithub} />
+            <FontAwesomeIcon style={{ color: "gray" }} className='icon' icon={faGithub} />
           </a>
         </div>
 

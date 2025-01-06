@@ -4,9 +4,9 @@ import sparkleShip from "../assets/images/sparkleShip1-logo.png"
 import soundly from "../assets/images/soundly-logo.png"
 import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons'
 import { faLaptop } from '@fortawesome/free-solid-svg-icons'
-import learGate from "../assets/images/LearGate.png"
 import flutter from "../assets/images/flutter.svg"
 import js from "../assets/images/js.png"
+import sqlite from "../assets/images/sqlite.svg"
 import carHuntVid from "../assets/CarHunt demo.mp4"
 import css from "../assets/images/css.svg"
 import nodeJs from "../assets/images/nodeJs.jpg"
@@ -50,7 +50,7 @@ function Projects() {
 
         <Project vid={budgetFlutterVid} images={budgetFlutterImages} title={"Flutter Budget App"} color={"#6AD0C1"} icon={faMobileScreenButton}
 
-          tech1={flutter} tech2={firebase} description="A budget app developed using Flutter. The purpose of this app is to help users manage
+          tech1={flutter} tech2={firebase} tech3={sqlite} description="A budget app developed using Flutter. The purpose of this app is to help users manage
           and keep track of their expenses and organize them into budgets, the app offers stats in the form of charts in oreder to help the 
           user better understand and analyze how their money was spent on different days, weeks, and months, 
           all of this data is saved using SQLite in Flutter. The app is integrated with a web version developed using React where the user can upload 
@@ -75,10 +75,10 @@ The app also allows users the choice between multiple colored themes as well as 
           offers a price calulator. Information about the team members of the platform is presented using a slider that auto scrolls with a timer."
           tech1={react}
           tech3={css} codeLink="" tech2={firebase} icon1={faLaptop} icon1Title={"Web App - Responsive"}
-
+          link="https://english-platfrom-website.web.app/"
         />
 
-        <Project img={learGate} images={learnGateImages} title="Student Portal Website" color={"#3F72AF"} device={'laptop'}
+        <Project images={learnGateImages} title="Student Portal Website" color={"#3F72AF"} device={'laptop'}
           description="This web application allows a student to log into their account which
           contains their academic information such as their GPA, achieved credits,
           faculty, personal information etc..., This data is all entered and managed
@@ -90,14 +90,14 @@ The app also allows users the choice between multiple colored themes as well as 
           tech3={css} codeLink="https://github.com/Refaat-Somaia/LearnGate" tech4={firebase} icon1={faLaptop} icon1Title={"Web App - Responsive"}
 
         />
-        <Project img={learGate} vid={budgetReactVid} images={budgetReactImages} title="React Budget App" color={"#6AD0C1"} device={'laptop'}
+        <Project vid={budgetReactVid} images={budgetReactImages} title="React Budget App" color={"#6AD0C1"} device={'laptop'}
           description="A React budget app that lets users manage their budgets and keep track of their spendigs along with
           a statistics page that shows visual data about weekly, monthly, and yearly spendings.  
           Essential React concepts were implemented in this app such as the implemntaion of useContext for
           the budgets and expenses data to be accessible from within all the app components as well as 
           the making of a custom hook called useLocalStorage to be used for storing arrays of objects persistently."  tech1={react} tech2={css}
           tech3={firebase} codeLink="https://github.com/Refaat-Somaia/react_budget_app" icon1={faLaptop} icon1Title={"Web App - Responsive"}
-
+          link="https://mybudget-cdb2f.web.app/"
         />
         <Project vid={carHuntVid} images={carHuntImages} img={carHunt} title={"Car Rental website"} color={"#F99417"} device={'laptop'}
           description="CarHunt is a car rental website that allows the users to browse a set
@@ -106,6 +106,7 @@ The app also allows users the choice between multiple colored themes as well as 
         here the user can click on the 'Book' button (provided he is already logged into the system) so he can select the booking date and duration, 
         confirm his address and confirm the rent request, the request is then sent to the database
         where it could be reviewed and approved by an admin. " codeLink="https://github.com/Refaat-Somaia/carHunt" tech1={react} tech2={css} tech3={firebase}
+          link="https://carhunt-764b8.web.app/"
         />
       </div>
 
